@@ -9,5 +9,5 @@ const theme = createTheme({
 });
 
 export const ThemeProviderWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return <ThemeProvider theme={ theme }> { children } </ThemeProvider>;
+  return <ThemeProvider theme={theme}> {children} </ThemeProvider>;
 };
