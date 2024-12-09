@@ -6,7 +6,7 @@ import { counterState } from '../features/counter/recoilState';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '../store/redux/store';
 
-export const Home: React.FC = () => {
+export const Home = () => {
   const { user } = useAppContext();
   const [recoilCounter, setRecoilCounter] = useRecoilState(counterState);
   const dispatch = useDispatch();
